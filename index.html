@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Order-form</title>
+</head>
+
+  <body>
+   <h1>Order Now!</h1>
+    <form action="thanks.html" method="post">
+      <fieldset>
+        <legend>Shipping Info</legend>
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="name"><br>
+
+
+        <label for="Address">Address:</label>
+        <input id="Address"type="text" name="address"><br>
+
+
+        <label for="City">City:</label>
+        <input id="City" type="text" name="city">
+
+
+        <label for="State">State:</label>
+        <input id="State" type="text" name="state" maxlength="2" size="2" >
+
+
+        <label for="Zip">Zip:</label>
+        <input id="Zip" type="text" name="zip" maxlength="5" size="5"><br>
+        <br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Order Info</legend>
+            <label for="size">Size:</label>
+            <select id="size"name="size">
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            </select>
+
+
+            <label for="Quantity">Quantity:</label>
+            <input id="Quantity" type="text" name="Quantity" maxlength="3" size="3"><br>
+            <br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Payment Info</legend>
+          Card Type:
+            <input id="visa" type="radio" name="card_type" value="Visa">
+            <label for="visa">Visa</lable>
+
+            <input id="MC" type="radio" name="card_type" value="MC">
+            <label for="MC">Master Card</label>
+
+            <input id="disc" type="radio" name="card_type" value="disc">
+            <label for="disc">Discover</label><br>
+
+
+            <label for="Credit Card Number">Credit Card Number:</label>
+            <input id="Credit Card Number" type="text" name="Credit Card Number" maxlength="17" size="17">
+       </fieldset>
+
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+ </body>
+</html>
